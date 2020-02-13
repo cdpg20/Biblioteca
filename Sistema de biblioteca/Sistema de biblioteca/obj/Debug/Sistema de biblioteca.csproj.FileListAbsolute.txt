@@ -1,0 +1,6 @@
+D:\Sistema de Biblioteca\Sistema de biblioteca\Sistema de biblioteca\obj\Debug\Sistema de biblioteca.csprojAssemblyReference.cache
+D:\Sistema de Biblioteca\Sistema de biblioteca\Sistema de biblioteca\bin\Debug\Sistema de biblioteca.exe.config
+D:\Sistema de Biblioteca\Sistema de biblioteca\Sistema de biblioteca\bin\Debug\Sistema de biblioteca.exe
+D:\Sistema de Biblioteca\Sistema de biblioteca\Sistema de biblioteca\bin\Debug\Sistema de biblioteca.pdb
+D:\Sistema de Biblioteca\Sistema de biblioteca\Sistema de biblioteca\obj\Debug\Sistema de biblioteca.exe
+D:\Sistema de Biblioteca\Sistema de biblioteca\Sistema de biblioteca\obj\Debug\Sistema de biblioteca.pdb

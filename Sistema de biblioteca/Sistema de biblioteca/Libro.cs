@@ -15,22 +15,26 @@ namespace Sistema_de_biblioteca
         private string codigoLibro;
         DateTime fechaDevolucion;
 
+        public string Autor { get => autor; set => autor = value; }
+        public string Editorial { get => editorial; set => editorial = value; }
+        public string CodigoLibro { get => codigoLibro; set => codigoLibro = value; }
+
         public Libro(string nombre, string autor, int cantidad, string codigoLibro, DateTime fechaDevolucion) 
         {
             this.nombre = nombre;
-            this.autor = autor;
+            this.Autor = autor;
             this.cantidad = cantidad;
-            this.codigoLibro = codigoLibro;
+            this.CodigoLibro = codigoLibro;
             this.fechaDevolucion = fechaDevolucion;
         }
 
         public Libro(string nombre, string autor, string editorial, int catindad, DateTime fecha, string codigoLibro)
         {
             this.nombre = nombre;
-            this.autor = autor;
-            this.editorial = editorial;
+            this.Autor = autor;
+            this.Editorial = editorial;
             this.cantidad = catindad;
-            this.codigoLibro = nombre + autor + fecha.Year.ToString();
+            this.CodigoLibro = nombre + autor + fecha.Year.ToString();
         }
         
         public String ObtenerNombre()

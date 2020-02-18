@@ -23,26 +23,26 @@ namespace Sistema_de_biblioteca
                         {
                             Console.WriteLine("Ingrese el libro que desa buscar:");
                             string libro = Console.ReadLine();
-                            Console.WriteLine(Biblioteca.Instance.buscarLibro(libro));
+                            Console.WriteLine(Biblioteca.Instance.BuscarLibro(libro));
                         }
                         break;
                     case 2:
                         {
                             Usuario listaPrestamos = new Usuario("Los libros prestados son:");
-                            Biblioteca.Instance.listaPrestamos();
+                            Biblioteca.Instance.ListaDePrestamos();
                         }
                         break;
                     case 3:
                         {
                             Usuario listaReservas = new Usuario("Los libros reservados son:");
-                            Biblioteca.Instance.listaReservas();
+                            Biblioteca.Instance.ListaDeReservas();
                         }
                         break;
                     case 4:
                         {
                             Console.WriteLine("Ingrese el libro que desa devolver:");
                             string devolverLibro = Console.ReadLine();
-                            Biblioteca.Instance.devolverLibro(devolverLibro);
+                            Biblioteca.Instance.DevolverLibro(devolverLibro);
                         }
                         break;
                     case 5:
@@ -50,7 +50,7 @@ namespace Sistema_de_biblioteca
                             Console.WriteLine("Ingrese el libro que desa Prestarse:");
                             string libroPrestado = Console.ReadLine();
                             Usuario usuario = new Usuario(libroPrestado);
-                            usuario.agregarLibroPrestado(new Libro());
+                            //usuario.AgregarLibroPrestado(new Libro());
                         }
                         break;
                 }

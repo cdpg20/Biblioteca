@@ -23,27 +23,28 @@ namespace Sistema_de_biblioteca
                         {
                             Console.WriteLine("Ingrese el libro que desa buscar:");
                             string libro = Console.ReadLine();
-                            Console.WriteLine(Biblioteca.Instance.getBuscarLibro(libro));
+                            Console.WriteLine(Biblioteca.Instance.BuscarLibro(libro));
                         }
                         break;
                         case 2:
                         {
                             Console.WriteLine("Los libros registrados son:");
-                            Console.Write(Biblioteca.Instance.getListaLibros());
+                            Console.Write(Biblioteca.Instance.ObtenerListaLibros());
                         }
                         break;
                     case 3:
                         {
                             Console.WriteLine("Ingrese el libro que desa agregar:");
                             string libro = Console.ReadLine();
-                            Biblioteca.Instance.getAgregarLibro(new Libro(libro));
+                            Console.WriteLine();
+                            //Biblioteca.Instance.BuscarLibro(new Libro(libro));
                         }
                         break;
                     case 4:
                         {
                             Console.WriteLine("Ingrese el libro que desa eliminar:");
                             string elimnarlibro = Console.ReadLine();
-                            Biblioteca.Instance.getEliminarLibro( elimnarlibro);
+                            Biblioteca.Instance.EliminarLibro( elimnarlibro);
                         }
                         break;
                     case 5:
@@ -51,7 +52,7 @@ namespace Sistema_de_biblioteca
                             Console.WriteLine("Ingrese el libro que desa Prestar:");
                             string libroPrestado = Console.ReadLine();
                             Usuario usuario = new Usuario(libroPrestado);
-                            usuario.agregarLibroPrestado(new Libro( libroPrestado));
+                            //usuario.AgregarLibroPrestado(new Libro( libroPrestado));
                         }
                         break;
                     case 6:
@@ -59,7 +60,7 @@ namespace Sistema_de_biblioteca
                             Console.WriteLine("Ingrese el libro que desa Reservar:");
                             string libro = Console.ReadLine();
                             Usuario usuario = new Usuario(libro);
-                           usuario.agregarLibroReservado(new Libro(libro));
+                           //usuario.AgregarLibroReservado(new Libro(libro));
                         }
                         break;
 

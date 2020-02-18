@@ -117,7 +117,7 @@ namespace Sistema_de_biblioteca
             }
         }
 
-        public void ListadePrestamos() 
+        public void ListaDePrestamos() 
         {
             foreach (var item in this.ListaPrestamos)
             {

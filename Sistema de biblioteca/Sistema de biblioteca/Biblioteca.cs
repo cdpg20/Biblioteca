@@ -48,6 +48,20 @@ namespace Sistema_de_biblioteca
             return false;
         }
 
+        public void RealizarReserva(Usuario usuario, Libro libro)
+        {
+            if (ListaReservas.Exists(u => u.ObtenerCi() == usuario.ObtenerCi()) || ListaPrestamos.Exists(u => u.ObtenerCi() == usuario.ObtenerCi()))
+            {
+                Console.WriteLine($"el usuario {usuario.ObtenerNombre()} ya reservo el libro={libro.ObtenerNombre()}");
+            }
+            else
+            {
+                ListaReservas.Add(usuario);
+                usuario.AgregarLibroReservado(libro);
+            }
+        }
+
+
         public void Stock(string nombre)
         {
             foreach (var libro in listaLibros)
@@ -106,13 +120,14 @@ namespace Sistema_de_biblioteca
             }
         }
 
-        public void DevolverLibro(string devolverLibro)
+        public void DevolverLibro(Libro libro, Usuario usuario)
         {
             for (int i = 0; i < ListaPrestamos.Count; i++)
             {
-                if (ListaPrestamos[i].ObtenerNombre() == devolverLibro)
+                if (ListaPrestamos[i].ObtenerNombre() == libro.ObtenerNombre())
                 {
-                    ListaPrestamos.Remove(ListaPrestamos[i]);
+                    ListaPrestamos.Remove(usuario);
+                    usuario.DevolverLibro(libro);
                 }
             }
         }

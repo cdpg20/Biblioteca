@@ -42,7 +42,7 @@ namespace Sistema_de_biblioteca
                         {
                             Console.WriteLine("Ingrese el libro que desa devolver:");
                             string devolverLibro = Console.ReadLine();
-                            Biblioteca.Instance.DevolverLibro(devolverLibro);
+                            //Biblioteca.Instance.DevolverLibro(devolverLibro);
                         }
                         break;
                     case 5:

@@ -66,5 +66,15 @@ namespace Sistema_de_biblioteca
         {
             ListaLibrosReservado.Add(libroReservado);
         }
+
+        public void DevolverLibro(Libro libro)
+        {
+            ListaLibrosPrestados.Remove(libro);
+        }
+
+        public void EliminarReserva(Libro libro)
+        {
+            ListaLibrosReservado.Remove(libro);
+        }
     }
 }

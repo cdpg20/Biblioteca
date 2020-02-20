@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Sistema de biblioteca/packages/Microsoft.AspNet.FriendlyUrls.1.0.2
+/Sistema de biblioteca/packages/Microsoft.AspNet.FriendlyUrls.Core.1.0.2
+/Sistema de biblioteca/packages/AspNet.ScriptManager.jQuery.3.3.1/lib
+/Sistema de biblioteca/packages/AspNet.ScriptManager.jQuery.3.3.1
+/Sistema de biblioteca/packages/AspNet.ScriptManager.bootstrap.3.4.1
+/Sistema de biblioteca/packages/Antlr.3.5.0.2
+/Sistema de biblioteca/packages
+/Sistema de biblioteca/WebApplication1/bin/roslyn
+/Sistema de biblioteca/WebApplication1/bin
